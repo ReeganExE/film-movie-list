@@ -41,5 +41,9 @@ function TrackList({ tracks }) {
 
 export default function App() {
   const tracks = useTracks()
-  return <div>{tracks && <TrackList tracks={tracks} />}</div>
+  return (
+    <div>
+      <TrackList tracks={tracks} />
+    </div>
+  )
 }
